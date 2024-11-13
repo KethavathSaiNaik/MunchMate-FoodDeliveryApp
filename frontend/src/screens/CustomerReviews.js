@@ -9,7 +9,7 @@ const CustomerReviews = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await fetch('http://localhost:5000/customer/getreviews'); // Adjust the URL based on your API
+                const response = await fetch('https://munchmate-deploy-backend.onrender.com/customer/getreviews'); // Adjust the URL based on your API
                 const data = await response.json();
                 if (data.success) {
                     setReviews(data.data); // Set the fetched reviews to state
