@@ -41,7 +41,7 @@ export default function Cart() {
       console.log(data, localStorage.getItem("userEmail"), new Date())
       
       window.location.href = response.data.url
-      let response1 = await fetch("http://localhost:5000/api/orderData", {
+      let response1 = await fetch("https://munchmate-deploy-backend.onrender.com/api/orderData", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',
