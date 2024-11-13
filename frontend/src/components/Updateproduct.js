@@ -12,7 +12,7 @@ const Updateproduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(item)
-        const response = await fetch("http://localhost:5000/product/updateproduct", {
+        const response = await fetch("https://munchmate-deploy-backend.onrender.com/product/updateproduct", {
            
             method: 'PUT',
             headers: {
