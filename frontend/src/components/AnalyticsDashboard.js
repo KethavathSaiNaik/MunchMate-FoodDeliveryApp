@@ -35,7 +35,7 @@ const AnalyticsDashboard = () => {
     useEffect(() => {
         const fetchAnalytics = async () => {
             try {
-                const response = await fetch('http://localhost:5000/analytics/info'); // Replace with your API endpoint
+                const response = await fetch('https://munchmate-deploy-backend.onrender.com/analytics/info'); // Replace with your API endpoint
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
