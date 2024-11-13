@@ -17,8 +17,8 @@ const MERCHANT_STATUS_URL="https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1
 
 const redirectUrl="https://munchmate-deploy-backend.onrender.com/payment/status"
 
-const successUrl="https://munchmate-deploy-frontend.onrender.com/payment-success"
-const failureUrl="https://munchmate-deploy-frontend.onrender.com/payment-failure"
+const successUrl="https://munchmate-deploy-frontend.onrender.com/"
+const failureUrl="https://munchmate-deploy-frontend.onrender.com/"
 
 router.post('/create-order', async (req, res) => {
 
