@@ -26,7 +26,7 @@ const DonationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:5000/donations/donate', {
+    fetch('https://munchmate-deploy-backend.onrender.com/donations/donate', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
