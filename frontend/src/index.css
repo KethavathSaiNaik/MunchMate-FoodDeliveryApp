@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue
+}
+.ngo-slider {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.sliding-container {
+  display: flex;
+  white-space: nowrap;
+  animation: slide 15s linear infinite;
+}
+
+.sliding-text {
+  padding: 0 30px; /* Spacing between the names */
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);  /* Start off the right side of the screen */
+  }
+  100% {
+    transform: translateX(-100%); /* Move all the way off the left side */
+  }
+}
+
+
+
+
+
+
+.selectors{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+  background-color: aliceblue;
+  list-style: none;
+  align-items: center;
+
+}
+.selectors li a{
+  color: black !important;
+  background-color: aliceblue;
+  text-decoration: none;
+}
+code {
+  font-family: "source-code-pro", 'Menlo', 'Monaco', 'Consolas', 'Courier New',
+    monospace;
+}
+.first{
+  margin: 50px;
+}
+.logoname{
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 35px !important;
+}
+.carousel-item img  {
+  height: 80vh;
+  width: 198vw;
+  
+}
+
+.wclass{
+  width: 34vw;
+  margin-left: 18px;
+}
+
+.carousalImg{
+  object-fit: contain !important;
+}
+.navbar{
+  height: 10vh;
+  background-color: rgb(66, 227, 66) !important;
+}
+
+.mybtnss1{
+  height: 42px;
+  width: 100px;
+  position: relative;
+  bottom: -3.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mybtnss2{
+  height: 42px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.mybtnss2 .mybad{
+ position: relative;
+ right: -2px;
+ top: 1px;
+}
+.navbar-nav{
+  margin-left: 55vw;
+}
+.table_container{
+  margin-top: 80px !important;
+}
+.tablerow td:hover{
+color: red;
+}
+.spc{
+  margin-left: 2vw;
+}
+.fs-1{
+  margin-left: 3vw;
+  font-size: x-large;
+}
+.navbar {
+  z-index: 1050;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+.dashbtn{
+  width: 25vw ;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: black;
+  background-color: aliceblue;
+}
+
+
+.btnhome{
+  height: 6vh;
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: black;
+  background-color: aliceblue;
+  
+}
+.nav-link{
+  color: rgb(26, 230, 26);
+}
+.tgt{
+  margin-left: 1vw;
+  height: 5vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myclass{
+  margin: 15px;
+}
+.newfont{
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(26, 230, 26);  
+  
+}
+/* option{
+  color: rgb(26, 230, 26); 
+} */
+.myfooter{
+  background-color: black;
+}
+
+
+
+
+/* ThankYou.css */
+
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3e5ab 0%, #2aa3e9 100%);
+  padding: 20px;
+  text-align: center;
+}
+
+.thank-you-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.thank-you-title {
+  color: #4a4a4a;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.thank-you-message {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.thank-you-button {
+  background-color: #5fdc43;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.thank-you-button:hover {
+  background-color: #f99c8c;
+}
+
+
+
