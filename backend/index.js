@@ -17,7 +17,7 @@ const port = process.env.PORT ||  5000
 //   next();
 // });
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // Only one domain allowed here
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000","https://munchmate-deploy-frontend.onrender.com"); // Only one domain allowed here
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
