@@ -37,7 +37,7 @@ export default function Cart() {
       
 
       
-      const response = await axios.post('http://localhost:5000/payment/create-order', dataa)
+      const response = await axios.post('https://munchmate-deploy-backend.onrender.com/payment/create-order', dataa)
       console.log(data, localStorage.getItem("userEmail"), new Date())
       
       window.location.href = response.data.url
