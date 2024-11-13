@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const cors = require("cors");
 const { v4: uuidv4 } = require('uuid');
 
-
+const port=process.env.PORT || 5000
 const MERCHANT_KEY="96434309-7796-489d-8924-ab56988a6076"
 const MERCHANT_ID="PGTESTPAYUAT86"
 
@@ -17,8 +17,8 @@ const MERCHANT_STATUS_URL="https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1
 
 const redirectUrl="http://localhost:5000/payment/status"
 
-const successUrl="http://localhost:3000/payment-success"
-const failureUrl="http://localhost:3000/payment-failure"
+const successUrl="https://munchmate-deploy-backend.onrender.com/payment-success"
+const failureUrl="https://munchmate-deploy-backend.onrender.com/payment-failure"
 
 router.post('/create-order', async (req, res) => {
 
