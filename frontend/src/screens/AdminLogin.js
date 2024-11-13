@@ -12,7 +12,7 @@ const AdminLogin = () => {
         e.preventDefault();
         console.log(credentials.admin_key)
         if (admin_keyvalue == credentials.admin_key){
-            const response = await fetch("http://localhost:5000/api/adminlogin", {
+            const response = await fetch("https://munchmate-deploy-backend.onrender.com/api/adminlogin", {
         
                 method: 'POST',
                 headers: {
