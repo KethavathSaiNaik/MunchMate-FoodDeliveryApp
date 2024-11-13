@@ -9,7 +9,7 @@ const DeleteProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(item)
-        const response = await fetch("http://localhost:5000/product/deleteproduct", {
+        const response = await fetch("https://munchmate-deploy-backend.onrender.com/product/deleteproduct", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'DELETE',
