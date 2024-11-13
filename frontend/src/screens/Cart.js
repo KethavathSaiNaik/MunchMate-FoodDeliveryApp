@@ -24,7 +24,7 @@ export default function Cart() {
     const copy=data
     localStorage.setItem('orderdata',copy)
     console.log(data)
-    // const ress=await fetch(`http://localhost:5000/api//getnameinfo?email=${userEmail}`)
+    // const ress=await fetch(`https://munchmate-deploy-backend.onrender.com/api//getnameinfo?email=${userEmail}`)
     // console.log("response is ")
     // console.log(ress)
 
