@@ -17,7 +17,7 @@ const Profile = ({ userEmail }) => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/viewprofiles/profile?email=${localStorage.getItem('userEmail')}` 
+        const response = await fetch(`https://munchmate-deploy-backend.onrender.com/viewprofiles/profile?email=${localStorage.getItem('userEmail')}` 
         , {
           method: 'GET',
           headers: {
@@ -50,7 +50,7 @@ const Profile = ({ userEmail }) => {
     const updatedUser = { name: updatedName, location: updatedLocation }; // Changed to location
 
     try {
-      const response = await fetch(`http://localhost:5000/viewprofiles/updateprofile?email=${localStorage.getItem('userEmail')}`, {
+      const response = await fetch(`https://munchmate-deploy-backend.onrender.com/viewprofiles/updateprofile?email=${localStorage.getItem('userEmail')}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const Profile = ({ userEmail }) => {
   const handleUpdatePassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/viewprofiles/updatepassword?email=${localStorage.getItem('userEmail')}`, {
+      const response = await fetch(`https://munchmate-deploy-backend.onrender.com/viewprofiles/updatepassword?email=${localStorage.getItem('userEmail')}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
