@@ -15,7 +15,7 @@ const ViewDonations = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/email/send-email', emailDetails);
+            const response = await axios.post('https://munchmate-deploy-backend.onrender.com/email/send-email', emailDetails);
             if (response.data.success) {
                 alert('Email sent successfully!');
             } else {
@@ -31,7 +31,7 @@ const ViewDonations = () => {
     useEffect(() => {
         const fetchDonations = async () => {
             try {
-                const response = await fetch('http://localhost:5000/donations/getdonations'); // Fetch donations from the backend
+                const response = await fetch('https://munchmate-deploy-backend.onrender.com/donations/getdonations'); // Fetch donations from the backend
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
