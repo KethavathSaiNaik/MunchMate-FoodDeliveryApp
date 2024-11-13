@@ -10,7 +10,7 @@ const Home = () => {
   const [search, setSearch] = useState('')
   
   const loadFoodItems = async () => {
-    let response = await fetch("http://localhost:5000/api/fooddata", {
+    let response = await fetch("https://munchmate-deploy-backend.onrender.com/api/fooddata", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
