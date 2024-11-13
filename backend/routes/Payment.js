@@ -15,7 +15,7 @@ const MERCHANT_ID="PGTESTPAYUAT86"
 const MERCHANT_BASE_URL="https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/pay"
 const MERCHANT_STATUS_URL="https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/status"
 
-const redirectUrl="http://localhost:5000/payment/status"
+const redirectUrl=`http://localhost:${port}/payment/status`
 
 const successUrl="https://munchmate-deploy-backend.onrender.com/payment-success"
 const failureUrl="https://munchmate-deploy-backend.onrender.com/payment-failure"
