@@ -40,7 +40,7 @@ const Feedback = () => {
         e.preventDefault();
         console.log(formData);
         
-        fetch('http://localhost:5000/customer/feedback', {
+        fetch('https://munchmate-deploy-backend.onrender.com/customer/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
