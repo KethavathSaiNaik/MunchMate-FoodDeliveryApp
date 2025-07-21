@@ -1,47 +1,51 @@
-Food Delivery Web App:
-This is a full-stack web application built with the MERN stack (MongoDB, Express, React, Node.js) designed to allow users to browse, order, and manage food deliveries.
-User Features:
-User Registration and Login: Secure user authentication using JWT tokens. Users can create an account or log in to place orders.
-Browse Menu: Users can view a list of available menus and dish details.
-Order Food: Select and add items to the cart, review the order, and place it with easy checkout options.
-Payment Integration: Integrated payment gateway for secure payments.
-Admin Features:
-Restaurant Management: Admins can manage restaurant profiles, add or edit menu items, and update pricing.
-Analytics Dashboard: Admins can track sales, orders, and user activity with visual analytics.
+# 🍔 Food Delivery Web App
 
-Tech Stack
+A full-stack **MERN** (MongoDB, Express, React, Node.js) food delivery application that enables users to browse menus, place orders, make payments, and for admins to manage restaurants and monitor analytics.
+
+---
+
+## 🚀 Features
+
+### 👤 User Features
+
+- 🔐 **User Registration & Login**  
+  Secure authentication using **JWT** tokens. Users can sign up and log in to place orders.
+
+- 🍽️ **Browse Menu**  
+  View available dishes with detailed descriptions and pricing.
+
+- 🛒 **Order Food**  
+  Add items to cart, review your order, and proceed through a seamless checkout process.
+
+- 💳 **Secure Payment Integration**  
+  Integrated **PhonePe** payment gateway for processing orders securely.
+
+---
 
 
-Frontend:
 
-React.js for building the user interface.
-React Router for navigation and handling routes.
-Context for state management across components.
-Backend:
+## 🧱 Tech Stack
 
-Node.js for server-side logic.
-Express.js to handle routing and API requests.
-MongoDB as the database to store users, orders, and restaurant details.
-Authentication:
+### ⚙️ Frontend
 
-JWT (JSON Web Tokens) for secure user authentication.
-Payment Gateway:
+- **React.js** — Dynamic and responsive user interface  
+- **React Router** — Page routing and navigation  
+- **Context API** — State management for authentication, cart, and user data
 
-Integration with a third-party payment API like Stripe or PayPal for handling payments.
-Tech Stack
-Frontend:
+### 🖥️ Backend
 
-React.js for building the user interface.
-React Router for navigation and handling routes.
-Context API for state management across components.
-Backend:
+- **Node.js** — Server-side runtime  
+- **Express.js** — RESTful APIs and route handling  
+- **MongoDB** — NoSQL database for storing user, order, and menu data
 
-Node.js for server-side logic.
-Express.js to handle routing and API requests.
-MongoDB as the database to store users, orders, and restaurant details.
-Authentication:
+### 🔐 Authentication
 
-JWT (JSON Web Tokens) for secure user authentication.
-Payment Gateway:
+- **JWT (JSON Web Tokens)** — Secured authentication and route protection
 
-Integrated PhonePe payment gateway for handling secure payments.
+### 💰 Payment Gateway
+
+- **PhonePe API** — Seamless and secure payment processing
+
+---
+
+
